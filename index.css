@@ -14,9 +14,8 @@ body {
     color: #191919;
 }
 
-/* HEADER BAR */
 .header-text {
-    background-color: black;
+    background-color: #191919;
     color: whitesmoke;
     width: 100%;
     padding: 4px 0;
@@ -32,7 +31,6 @@ body {
     padding: 0;
 }
 
-/* HEADER TAGS */
 h1,
 h2,
 h3,
@@ -44,12 +42,24 @@ h6 {
     font-weight: lighter;
 }
 
-/* UTILITIES */
 .italic {
     font-style: italic;
 }
 
-/* HERO */
+main li {
+    margin: 5px 0;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+/********** HERO **********/
 .hero {
     height: fit-content;
     font-size: 2rem;
@@ -78,53 +88,31 @@ h6 {
     filter: none;
 }
 
-/* MAIN CONTENT WRAPPER */
-.content-wrapper li {
-    margin: 5px 0;
-}
-
-.content-wrapper a {
-    text-decoration: none;
-}
-
-.content-wrapper a:hover {
-    background-color: blue;
-    color: whitesmoke;
-}
-
-/* SECTION STYLE */
-.content-wrapper section {
-    padding: 25px;
-}
-
-.section-text {
+/* SECTION CARDS */
+.section-card {
+    margin: 25px;
     padding: 50px;
     border-radius: 25px;
     background-color: whitesmoke;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* ABOUT ME */
-.about-me .section-text {
-    
-    margin: 0 auto;
-    max-width: fit-content;
+/********** ABOUT ME **********/
+.red-border {
     border-left: 3px solid red;
     border-right: 3px solid red;
 }
 
-/* PROJECTS */
-.projects .section-text {
-    margin-left: auto;
+/********** PROJECTS **********/
+.green-border {
     border-left: 3px solid green;
     border-right: 3px solid green;
 }
 
 .projects-container {
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 16px;
 }
 
 .project-card {
@@ -132,27 +120,26 @@ h6 {
     border: 1px solid blue;
     border-radius: 15px;
     box-shadow: 4px 2px 4px blueviolet;
+    padding: 10px;
 }
 
-
 /********** COURSES **********/
-.courses .section-text {
+.blue-border {
     border-left: 3px solid blue;
     border-right: 3px solid blue;
 }
 
-/* CONTACT */
-.contact .section-text {
-    margin-left: auto;
-    border-left: 3px solid indigo;
-    border-right: 3px solid indigo;
+/********** CONTACT **********/
+.purple-border {
+    border-left: 3px solid violet;
+    border-right: 3px solid violet;
 }
 
-.contact li {
+.contact-list li {
     list-style-type: none;
 }
 
-/* THANK YOU */
+/********** THANK YOU **********/
 section.thank-you {
     text-align: center;
 }
@@ -164,7 +151,7 @@ section.thank-you {
     font-weight: lighter;
 }
 
-/* FOOTER */
+/********** FOOTER **********/
 footer {
     background-color: #8cd6c9;
     padding: 10px;
@@ -198,7 +185,7 @@ footer .profile-links a {
     margin: 10px auto;
 }
 
-/* RESPONSIVE */
+/********** RESPONSIVE **********/
 @media only screen and (max-width:1024px) {
     .header-text {
         font-size: 1rem;
