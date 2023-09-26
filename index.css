@@ -59,6 +59,10 @@ main a:hover {
     color: whitesmoke;
 }
 
+main p {
+    line-height: 1.25;
+}
+
 /********** HERO **********/
 .hero {
     height: fit-content;
@@ -131,8 +135,12 @@ main a:hover {
 
 /********** CONTACT **********/
 .purple-border {
-    border-left: 3px solid violet;
-    border-right: 3px solid violet;
+    border-left: 3px solid purple;
+    border-right: 3px solid purple;
+}
+
+ul.contact-list {
+    padding-left: 0;
 }
 
 .contact-list li {
@@ -213,10 +221,9 @@ footer .profile-links a {
         row-gap: 15px;
     }
 
-    .section-text {
-        padding: 15px;
-        width: 90%;
-        margin: 0 auto;
+    .section-card {
+        padding: 25px;
+        margin: 25px 10px;
     }
 
     footer .profile-links {
