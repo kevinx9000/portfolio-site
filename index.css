@@ -7,7 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 body {
-    background: linear-gradient(#fcfcfc, #8CBED6);
+    /* background: linear-gradient(#fcfcfc, #8CBED6); */
+    background: url(images/12188678_4907157.jpg);
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -68,7 +69,7 @@ main p {
     height: fit-content;
     font-size: 2rem;
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -90,15 +91,22 @@ main p {
 
 .hero-photo img:hover {
     filter: none;
+    box-shadow: 10px 10px 10px 0 turquoise, -10px -10px 10px 0 #e04050;
 }
 
-/* SECTION CARDS */
+/********** SECTION CARDS **********/
 .section-card {
-    margin: 25px;
+    margin: 50px;
     padding: 50px;
     border-radius: 25px;
     background-color: whitesmoke;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 16px #8CBED6;
+}
+
+.med-width {
+    max-width: 786px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /********** ABOUT ME **********/
@@ -125,6 +133,12 @@ main p {
     border-radius: 15px;
     box-shadow: 4px 2px 4px blueviolet;
     padding: 10px;
+    transition: 0.25s all;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 8px 16px 2px blueviolet;
 }
 
 /********** COURSES **********/
@@ -161,8 +175,18 @@ section.thank-you {
 
 /********** FOOTER **********/
 footer {
-    background-color: #8cd6c9;
+    /* background-color: #8cd6c9; */
     padding: 10px;
+    color: whitesmoke;
+}
+
+.bg-gradient {
+    /* fallback for old browsers */
+    background: #12c2e9;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 }
 
 footer h3 {
