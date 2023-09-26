@@ -103,11 +103,7 @@ main p {
     box-shadow: 4px 4px 16px #8CBED6;
 }
 
-.med-width {
-    max-width: 786px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /********** ABOUT ME **********/
 .red-border {
@@ -218,6 +214,15 @@ footer .profile-links a {
 }
 
 /********** RESPONSIVE **********/
+
+@media only screen and (min-width:1000px) {
+    .med-width {
+        max-width: 786px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media only screen and (max-width:1024px) {
     .header-text {
         font-size: 1rem;
